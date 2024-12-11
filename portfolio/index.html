@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+        /* General Styles */
+       
+
+       
+        /* Project Card Styling */
+        .project-card {
+            width: 280px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-image-container {
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        .project-card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-card-body h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project-card-body p {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .project-links a {
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #ff6f91;
+            margin: 0 8px;
+            transition: color 0.3s;
+        }
+
+        .project-links a:hover {
+            color: #ff9671;
+        }
+
+        /* Pseudo Classes for Project Cards */
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+    </style>
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/godly.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Godly Biju</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.instagram.com/godly.__/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> 
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="www.linkedin.com/in/godly-biju" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#Education"><i class="bi bi-images navicon"></i> Education</a></li>
+        <li><a href="#Professional"><i class="bi bi-hdd-stack navicon"></i> Professional Experience</a></li>
+       
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/godly6.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Godly Biju</h2>
+        <p>I'm <span class="typed">Full Stack Developer</span><span class="typed-cursor typed-cursor--blink"
+            aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I am a passionate software developer with a Bachelor’s degree in Computer Applications from
+          Kerala University. Skilled in languages like Python, PHP, Java, C, and C++ I enjoy tackling
+          real-world problems through code. With experience in web development frameworks like Django
+          and expertise in databases like MySQL, and MongoDB, I’ve built projects like
+          "Pet Care" that showcase my versatility and commitment to quality.My expertise extends to both front-end and
+          back-end development with experience in MEAN and MERN stacks.
+          Currently, I am seeking an
+          entry-level position where I can leverage my technical skills and problem-solving abilities to
+          contribute to impactful projects.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/godly5.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Full Stack Developer.</h2>
+            <p class="fst-italic py-3">
+              Versatile Full Stack Developer proficient in building dynamic, user-centric web applications. Skilled in
+              both front-end and back-end technologies, with experience in developing scalable and efficient solutions.
+              Passionate about creating intuitive user interfaces and robust server-side logic to deliver seamless user
+              experiences.
+            </p>
+            <div class="row">
+              <div class="col-lg-5">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 October 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>godlybiju2@gmail.com.com</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9745371542 </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kollam </span></li>
+                </ul>
+              </div>
+              <div class="col-lg-7">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's of Computer
+                      Application(B.C.A)</span></li>
+
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Eager to contribute to innovative projects and work in a collaborative environment to develop
+              high-quality, scalable applications while continuously honing my technical expertise.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+        
+
+
+
+    <!-- My Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container section-title">
+            <h2>My Projects</h2>
+            <p>Explore some of the projects I've been working on, showcasing my skills and expertise in development.</p>
+        </div>
+
+        <div class="container d-flex justify-content-center align-items-center flex-wrap project-container">
+            <!-- Project Card 1 -->
+            <div class="project-card mx-3 my-4">
+                <div class="project-image-container">
+                    <img src="assets/img/project1.jpg" class="project-image" alt="Project 1">
+                </div>
+                <div class="project-card-body">
+                    <h4>Project 1: Pet Care</h4>
+                    <p>The project is developed using PHP.</p>
+                    <div class="project-links">
+                        <a href="" title="Preview" class="preview-link"><i
+                                class="bi bi-zoom-in"></i> Preview</a>
+                        <a href="https://github.com/Godly-Biju/Pet_Care-mini_project-.git" target="_blank" title="More Details" class="details-link"><i
+                                class="bi bi-link-45deg"></i> Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card mx-3 my-4">
+                <div class="project-image-container">
+                    <img src="assets/img/project2.jpg" class="project-image" alt="Project 2">
+                </div>
+                <div class="project-card-body">
+                    <h4>Project 2: Pet Care</h4>
+                    <p>The project is developed using Python Django.</p>
+                    <div class="project-links">
+                        <a href="" title="Preview" class="preview-link"><i
+                                class="bi bi-zoom-in"></i> Preview</a>
+                        <a href="https://github.com/Godly-Biju/Pet_Care.git" target="_blank" title="More Details" class="details-link"><i
+                                class="bi bi-link-45deg"></i> Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+      <div class="p-3 ">
+        <h3>Programming Languages</h3>
+        <span class="badge bg-success">Python</span>
+        <span class="badge bg-success">PHP</span>
+        <span class="badge bg-success">C</span>
+        <span class="badge bg-success">C++</span>
+        <span class="badge bg-success">Java</span>
+  
+        <br>
+        <br>
+  
+        <h3>Frameworks and Libraries</h3>
+        <span class="badge bg-success">Django</span>
+        <span class="badge bg-success">Bootstrap</span>
+        <span class="badge bg-success">Tailwind CSS</span>
+      
+        <br>
+        <br>
+  
+        <h3>Web Development</h3>
+        <span class="badge bg-success">HTML5</span>
+        <span class="badge bg-success">CSS3</span>
+        <span class="badge bg-success">JavaScript</span>
+  
+        <br>
+        <br>
+  
+        <h3>Database Management</h3>
+        <span class="badge bg-success">MYSQL Development</span>
+        
+        <br>
+        <br>
+  
+        <h3>Tools</h3>
+        <span class="badge bg-success">Git</span>
+        <span class="badge bg-success">GitHub</span>
+        <span class="badge bg-success">Figma</span>
+        <span class="badge bg-success">Netlify</span>
+        <span class="badge bg-success">Vercel</span>
+  
+        <br>
+        <br>
+  
+  
+        <h3>Problem Solving</h3>
+        <span class="badge bg-success">Leetcode</span>
+        <span class="badge bg-success">HackerRank</span><br><br>
+  
+        
+      </div>
+      
+      
+
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+
+        <div class="card">
+          <div class="card-header">
+            <h2>Resume</h2>
+          </div>
+          <div class="card-body">
+
+            <a href="./assets/resume/Godly Biju - Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+          </div>
+
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container"  >
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100" id="Education">
+            
+
+            <h3  class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Computer Applications (BCA)</h4>
+              <h5>2021 - 2024</h5>
+              <p><em>Don Bosco College, Kottiyam </em></p>
+              <p>Kerala University </p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Vocational Higher Secondary Education <br>
+                (Electronics and Communication) </h4>
+              <h5>2019 - 2021</h5>
+              <p><em>St George’s VHSS</em></p>
+              
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" id="Professional">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Development Intern</h4>
+              <h5>12/2024 - 03/2024</h5>
+              <p><em> Company Name Trinity — Thiruvanathapuram </em></p>
+              <ul>
+                <li> Developed a web-based system using Python
+                  Django .</li>
+                <li>Collaborated with cross-functional teams to build
+                  responsive web applications. </li>
+                <li>Assisted in bug fixing, code reviews, and testing.
+                </li>
+                <li>Gained hands-on experience with version control
+                  (Git) and Agile methodology.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    
+
+   
+
+        
+
+    
+
+            
+
+            
+
+         
+
+   
+  </main>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
